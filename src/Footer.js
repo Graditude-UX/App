@@ -9,10 +9,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe, faMessage, faPencil, faUserFriends, faGear } from "@fortawesome/free-solid-svg-icons";
 import Entrybar from './components/Popup';
 
+const useState = React.useState
+
 
 function Footer() {
 let navigate = useNavigate();
-const [popUpMenu, setPopUpMenu] = React.useState(false);
+
+const [buttonPopup, setButtonPopup] = useState(false);
 
   return (
     <div className="footer">
@@ -25,7 +28,7 @@ const [popUpMenu, setPopUpMenu] = React.useState(false);
         <FontAwesomeIcon icon={faMessage} />
         </Button>
 
-        <Button onClick={() => {setPopUpMenu(!popUpMenu)}} color="white" style={{}}>
+        <Button onClick={() => setButtonPopup(true)} color="white" style={{}}>
         <FontAwesomeIcon icon={faPencil} />
         </Button>
 
@@ -37,7 +40,8 @@ const [popUpMenu, setPopUpMenu] = React.useState(false);
         <FontAwesomeIcon icon={faGear} />
         </Button>
       </nav>
-
+      <Entrybar trigger= {buttonPopup}>
+        </Entrybar>
     </div>
   );
 }

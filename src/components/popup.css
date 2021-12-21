@@ -1,0 +1,9 @@
+.popup{
+    position: fixed;
+    left: 50%;
+    height: 10%;
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}

@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import { Button, FormGroup, Input, Label } from 'reactstrap';
-//import Graph from './Linegraph.js';
 import pic from './avatar.jpg';
 import { useNavigate } from 'react-router-dom';
-// import Form from '../forms/JournalForm.js';
-// import './Form.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faImages, faVideo, faMicrophone } from "@fortawesome/free-solid-svg-icons";
 import DateTime from '../components/Datetime';
@@ -18,10 +15,10 @@ const[text, setText] = useState()
 
 function handleSubmit(e){
     e.preventDefault()
-    //alert("Saved!")
     props.setEntry(prev => prev.concat({name, text, id: Date.now()}))
     setName("")
     setText("")
+    alert("Saved!")
 }
 
     return (

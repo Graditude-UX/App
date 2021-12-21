@@ -5,6 +5,8 @@ import pic from './avatar.jpg';
 import Chart from '../components/Happygraph';
 import './profile.css';
 
+const useState = React.useState
+
 function Profile(){
     let navigate = useNavigate();
 
@@ -19,14 +21,56 @@ function Profile(){
         <div className= 'profile-display' style={{paddingTop: "100px"}}>
         <Chart/>
         </div>
+
         <div className= 'profile-display' style={{paddingTop: "50px"}}>
          Recent posts 
+        <nav style={{position: 'fixed', left: 30, paddingTop: "30px"}}>
+        <Button onClick={() => {navigate("/")}} color="white" style={{}}>
+        Post 1
+        </Button>
+
+        <Button onClick={() => {navigate("/")}} color="white" style={{}}>
+        Post 2
+        </Button>
+
+        <Button onClick={() => {navigate("/")}} color="white" style={{}}>
+        Post 3
+        </Button>
+        </nav>
         </div>
+
         <div className= 'profile-display' style={{paddingTop: "50px"}}>
          Journal prompts
+         <nav style={{position: 'fixed', left: 30, paddingTop: "30px"}}>
+        <Button onClick={() => {navigate("/")}} color="white" style={{}}>
+        Prompt 1
+        </Button>
+
+        <Button onClick={() => {navigate("/")}} color="white" style={{}}>
+        Prompt 2
+        </Button>
+
+        <Button onClick={() => {navigate("/")}} color="white" style={{}}>
+        Prompt 3
+        </Button>
+        </nav>
         </div>
+
         <div className= 'profile-display' style={{paddingTop: "50px"}}>
-         Journal entries 
+         Journal entries
+         <nav style={{position: 'fixed', left: 30, paddingTop: "30px"}}>
+        <Button onClick={() => {navigate("/")}} color="white" style={{}}>
+        Entry 1
+        </Button>
+
+        <Button onClick={() => {navigate("/")}} color="white" style={{}}>
+        Entry 2
+        </Button>
+
+        <Button onClick={() => {navigate("/")}} color="white" style={{}}>
+        Entry 3
+        </Button>
+        </nav> 
         </div>
         </div>
     )
