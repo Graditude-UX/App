@@ -23,7 +23,6 @@ function App() {
       <Route path="/private" element={<Private/>}/>  
       <Route path="/public" element={<Public/>}/>     
     </Routes>
-    <div>Footer</div>
     </Router>
   );
 }

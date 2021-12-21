@@ -35,12 +35,14 @@ class Form extends Component{
         return (
             <div>
             <form>
-                <FormGroup>
+                <FormGroup style={{position: 'absolute' , left: 20, top: 90 }}>
                 <small style= {{}}>{Date()}</small>
                 <h3></h3>
                 <Label>
-                   <span className="font-weight-bold"> What's something you appreciate most about yourself?</span>
+                    What's something you appreciate most about yourself?
                 </Label>
+                </FormGroup>
+                <FormGroup style={{position: 'absolute' , left: 20, top: 150, paddingTop: "10px", paddingBottom: "30px" }}>
                 <Input
                      placeholder="Add title"
                      type="text"
@@ -49,9 +51,9 @@ class Form extends Component{
                      value={title}
                      onChange={this.handleChange} />
                 </FormGroup>
-                <FormGroup>
-                <Label>  </Label>
-                <Input style={{paddingTop: "10px", paddingBottom: "400px" }}
+                
+                <FormGroup >
+                <Input style={{position: 'absolute' , left: 20, top: 200, paddingTop: "10px", paddingBottom: "400px" }}
                      placeholder="What's on your mind today?"
                      type="text"
                      name ="body"
@@ -64,7 +66,7 @@ class Form extends Component{
                      <Button color= "white"  style={{position: 'absolute' , right: 135, bottom: 130}}><FontAwesomeIcon icon={ faMicrophone }/> </Button> */}
                 </FormGroup>
             </form>
-            <Button color = "info" onClick={this.submitForm} size="lg" block>Save Journal</Button>
+            <Button color = "info"  style={{position: 'absolute' , left: 50, bottom: 50}} onClick={this.submitForm} size="lg" block>Save Journal</Button>
             </div>
         )
     }

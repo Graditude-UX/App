@@ -14,7 +14,7 @@ function Privateentry(){
         <img src={pic} height={50} width={50} />
         </Button>
         <h1 style={{position: 'absolute' , left: 100, top: 0, paddingBottom: "30px", paddingTop: "20px"}}> Private Entry </h1>
-        <Form/>
+        <Form className="App container" />
         </div>
     )
 }
