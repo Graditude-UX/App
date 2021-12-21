@@ -12,7 +12,7 @@ function Public() {
         <Button onClick={() => {navigate("/profile")}} color="white" style={{position: 'absolute' , left: 40, top: 20}}>
           <img src={pic} height={50} width={50} />
         </Button>
-        <h1 style={{position: 'absolute' , left: 100, top: 0, paddingBottom: "30px", paddingTop: "20px"}}> Public Entry </h1>
+        <h1 style={{position: 'absolute' , left: 100, top: 0, paddingLeft: 20, paddingBottom: "30px", paddingTop: "20px"}}> Public Entry </h1>
         <Form />
         </div>
     )
