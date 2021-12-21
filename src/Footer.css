@@ -2,7 +2,10 @@
     color: rgb(0, 0, 0);
     background-color: rgb(88, 155, 231);
     padding-top: 3em;
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    width: 95%;
+    width: 98%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
   }

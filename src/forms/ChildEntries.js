@@ -1,45 +1,41 @@
-import React, {Component} from 'react';
-import { Button, Col, Row, Container} from 'reactstrap';
-//handles entries
+import React, { Component } from 'react';
+
 const EntryHeader = () => {
-    return <h2></h2>
+    return <h3>Title</h3>
 }
 
 const EntryBody = props => {
-    //formats journal entries
     const lines = props.entryData.map((line, index) => {
         return (
-            <Container key={index} className= "shadow p-3 mb-5 bg-white rounded">
-                <Row>
-                    <Col>
-                        <h2>{line.title}</h2> 
-                        <small>{Date()}</small>
-                        <p>{line.body}</p>
-                        <Button onClick={() => props.removeEntry(index)} color="primary"> Delete </Button>
-                    </Col>
-                </Row>
-            </Container>
+            <div key={index}>
+                <h2>{line.title}</h2>
+                <p>{line.body}</p>
+                <button onClick={() => props.removeEntry(index)}>Delete</button>
+            </div>
         )
     })
 
-    return(
+    return (
         <div>
-          {lines}  
+            {lines}  
         </div>
     )
 }
 
 const Entries = (props) => {
-    //"My Entries" header
-        const { entryData, removeEntry } = props
+    
+        const { entryData, removeEntry } = props;
 
         return (
             <div>
-            <h2 style={{paddingTop: "20px", paddingBottom: "20px"}}>My Entries</h2>
-            <EntryHeader />
-            <EntryBody entryData={entryData} removeEntry={removeEntry}/>
+                <h2>My Entries</h2>
+               
+                <EntryHeader />
+                <EntryBody entryData={entryData} removeEntry={removeEntry}/>
             </div>
+
         )
+    
 }
 
 export default Entries
