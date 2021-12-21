@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Button, FormGroup, Input, Label } from 'reactstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faImages } from "@fortawesome/free-solid-svg-icons";
+import DateTime from '../components/Datetime';
 
 class Form extends Component{
     constructor(props){
@@ -35,8 +36,8 @@ class Form extends Component{
         return (
             <div >
             <form>
-                <FormGroup style={{position: 'absolute' , left: 40, top: 90 }}>
-                <small style= {{}}>{Date()}</small>
+                <FormGroup style={{position: 'absolute' , left: 32, top: 105 }}>
+                <DateTime/>
                 <h3></h3>
                 <Label>
                     What's are you grateful for today?
@@ -66,7 +67,7 @@ class Form extends Component{
                      <Button color= "white" style={{position: 'absolute' , left: 50, top: 560}}> <FontAwesomeIcon icon={faImages} /> </Button>
                 </FormGroup>
             </form>
-            <Button color = "info"  style={{position: 'absolute' , left: '50%', bottom: 60, transform: 'translate(-50%, -50%)'}} onClick={this.submitForm} >Save Journal</Button>
+            <Button color = "info"  style={{position: 'absolute' , left: '50%', bottom: 60, transform: 'translate(-50%, -50%)'}} onClick={this.submitForm} >Post</Button>
             </div>
         )
     }

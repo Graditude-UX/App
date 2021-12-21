@@ -3,6 +3,7 @@ import { Button, FormGroup, Input, Label } from 'reactstrap';
 import './Form.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faImages, faVideo, faMicrophone } from "@fortawesome/free-solid-svg-icons";
+import DateTime from '../components/Datetime';
 
 class Form extends Component{
     constructor(props){
@@ -36,8 +37,8 @@ class Form extends Component{
         return (
             <div >
             <form>
-                <FormGroup style={{position: 'absolute' , left: 40, top: 90 }}>
-                <small style= {{}}>{Date()}</small>
+                <FormGroup style={{position: 'absolute' , left: 30, top: 105 }}>
+                <DateTime/>
                 <h3></h3>
                 <Label>
                     What's something you appreciate most about yourself?
