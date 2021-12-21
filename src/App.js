@@ -5,24 +5,28 @@ import Private from './Pages/Private';
 import Globe from './Pages/Globe';
 import Public from './Pages/Public';
 import { Button, FormGroup, Input, Label } from 'reactstrap';
+import Footer from './Footer';
+import Icon from './Pages/icon';
 
 
 function App() {
 
   return (
     <Router>
-      <nav>
+      {/* <nav>
         <Link to="/">Globe</Link>
         <Link to="/profile">Profile</Link>
         <Link to="/private">Private</Link>
         <Link to="/public">Public</Link>
-      </nav>
+      </nav> */}
     <Routes>
       <Route path="/" element={<Globe/>}/> 
       <Route path="/profile" element={<Profile/>}/>  
       <Route path="/private" element={<Private/>}/>  
-      <Route path="/public" element={<Public/>}/>     
+      <Route path="/public" element={<Public/>}/> 
+      <Route path="/icon" element={<Icon/>}/>    
     </Routes>
+    < Footer />
     </Router>
   );
 }
