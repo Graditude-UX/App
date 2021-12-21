@@ -4,9 +4,11 @@ import Profile from './Pages/Profile';
 import Private from './Pages/Private';
 import Globe from './Pages/Globe';
 import Public from './Pages/Public';
+import { Button, FormGroup, Input, Label } from 'reactstrap';
 
 
 function App() {
+
   return (
     <Router>
       <nav>

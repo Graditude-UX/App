@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button, FormGroup, Input, Label } from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faVideo, faImages, faMicrophone } from '@fortawesome/free-solid-svg-icons';
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+//import { faVideo, faImages, faMicrophone } from '@fortawesome/free-solid-svg-icons';
 
 class Form extends Component{
     constructor(props){
@@ -59,9 +59,9 @@ class Form extends Component{
                      value={body}
                      
                      onChange={this.handleChange} /> 
-                     <Button color= "white" style={{position: 'absolute' , left: 130, bottom: 90}}> <FontAwesomeIcon icon={ faImages } /> </Button>
+                     {/* <Button color= "white" style={{position: 'absolute' , left: 130, bottom: 90}}> <FontAwesomeIcon icon={ faImages } /> </Button>
                      <Button color= "white"  style={{position: 'absolute' , right: 132, bottom: 90}}> <FontAwesomeIcon icon={ faVideo } /> </Button>
-                     <Button color= "white"  style={{position: 'absolute' , right: 135, bottom: 130}}><FontAwesomeIcon icon={ faMicrophone }/> </Button>
+                     <Button color= "white"  style={{position: 'absolute' , right: 135, bottom: 130}}><FontAwesomeIcon icon={ faMicrophone }/> </Button> */}
                 </FormGroup>
             </form>
             <Button color = "info" onClick={this.submitForm} size="lg" block>Save Journal</Button>
