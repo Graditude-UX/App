@@ -6,7 +6,6 @@ import Globe from './Pages/Globe';
 import Public from './Pages/Public';
 import { Button, FormGroup, Input, Label } from 'reactstrap';
 import Footer from './Footer';
-import Icon from './Pages/icon';
 
 
 function App() {
@@ -23,8 +22,7 @@ function App() {
       <Route path="/" element={<Globe/>}/> 
       <Route path="/profile" element={<Profile/>}/>  
       <Route path="/private" element={<Private/>}/>  
-      <Route path="/public" element={<Public/>}/> 
-      <Route path="/icon" element={<Icon/>}/>    
+      <Route path="/public" element={<Public/>}/>  
     </Routes>
     < Footer />
     </Router>
