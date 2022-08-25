@@ -71,3 +71,53 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 Start development sever by running:
 npm start
+
+# Grateful Together
+
+This is a global social media app designe to connect people through gratitude
+
+## Getting Started
+
+These instructions will give you a copy of the project up and running on
+your local machine for development and testing purposes. See deployment
+for notes on deploying the project on a live system.
+
+### Prerequisites
+
+Requirements for the software and other tools to build, test and push 
+- [Example 1](https://www.example.com)
+- [Example 2](https://www.example.com)
+
+### Installing
+
+A step by step series of examples that tell you how to get a development
+environment running
+
+Say what the step will be
+
+    Give the example
+
+And repeat
+
+    until finished
+
+End with an example of getting some data out of the system or using it
+for a little demo
+
+## Deployment
+
+Add additional notes to deploy this on a live system
+
+## Built With
+
+  - [Contributor Covenant](https://www.contributor-covenant.org/) - Used
+    for the Code of Conduct
+  - [Creative Commons](https://creativecommons.org/) - Used to choose
+    the license
+
+## Authors
+
+  - **CiennaPaige Slattery**
+   - **Immanuela Belaineh**
+
+
