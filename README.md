@@ -12,7 +12,7 @@ This app consists of three parts:
 
 ● A self and gratitude awareness portion. This feature will include a wristband that tracks happiness trends throughout the day and creates a chart where users can view these trends. Our app will also allow the user to create private gratitude entries and they will have the option to use one of our gratitude prompts or journals without a prompt.
 
-Paper about project can be found [here] (https://medium.com/berea-hcc/gratitude-together-793e123c7fb)
+Paper about project can be found [here](https://medium.com/berea-hcc/gratitude-together-793e123c7fb).
 
 ## Getting Started
 
