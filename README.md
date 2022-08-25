@@ -33,16 +33,13 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development
-environment running
+Install react-scripts:
 
-Say what the step will be
+### `npm install react-scripts --save`
 
-    Give the example
+Run program:
 
-And repeat
-
-    until finished
+### `npm start`
 
 End with an example of getting some data out of the system or using it
 for a little demo
