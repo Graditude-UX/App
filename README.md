@@ -1,6 +1,18 @@
-# Grateful Together
+# Gratitude Together
 
-This is a global social media app designe to connect people through gratitude
+This is a global social media app designed to connect people through gratitude.
+
+This app consists of three parts:
+
+● A visual and interactive application that allows users to interact with the globe so that they can view gratitude across the globe. Users will also be able to post short gratitude entries in their own region.
+
+
+● A social media feature where users can add friends and interact more in-depth with their friends posts by liking it or sending a message response. Users will also be able to chat with their friends and when they view their friend’s posts on the globe their friend’s image will appear.
+
+
+● A self and gratitude awareness portion. This feature will include a wristband that tracks happiness trends throughout the day and creates a chart where users can view these trends. Our app will also allow the user to create private gratitude entries and they will have the option to use one of our gratitude prompts or journals without a prompt.
+
+Paper about project can be found [here] (https://medium.com/berea-hcc/gratitude-together-793e123c7fb)
 
 ## Getting Started
 
