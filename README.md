@@ -1,6 +1,6 @@
 # Gratitude Together
 
-This is a global social media app designed to connect people through gratitude.
+This is a global social media app designed to connect people through gratitude. This app was indended as a submission for the CHI Student Design Competition but was never finished.
 
 This app consists of three parts:
 
