@@ -1,20 +1,35 @@
 # Gratitude Together
 
-This is a global social media app designed to connect people through gratitude. This app was indended as a submission for the CHI Student Design Competition but was never finished.
+This is the start of a prototype for a social media application aimed at connecting college-aged people through gratitude. 
+
+## Description
 
 This app consists of three parts:
 
-● A visual and interactive application that allows users to interact with the globe so that they can view gratitude across the globe. Users will also be able to post short gratitude entries in their own region.
+  ●  A visual and interactive application that allows users to interact with the globe so that they can view gratitude across the globe. Users will also be able to post short gratitude entries in their own region.
 
 
-● A social media feature where users can add friends and interact more in-depth with their friends posts by liking it or sending a message response. Users will also be able to chat with their friends and when they view their friend’s posts on the globe their friend’s image will appear.
+  ● A social media feature where users can add friends and interact more in-depth with their friends posts by liking it or sending a message response. Users will also be able to chat with their friends and when they view their friend’s posts on the globe their friend’s image will appear.
 
 
-● A self and gratitude awareness portion. This feature will include a wristband that tracks happiness trends throughout the day and creates a chart where users can view these trends. Our app will also allow the user to create private gratitude entries and they will have the option to use one of our gratitude prompts or journals without a prompt.
+  ● A self and gratitude awareness portion. This feature will include a wristband that tracks happiness trends throughout the day and creates a chart where users can view these trends. Our app will also allow the user to create private gratitude entries and they will have the option to use one of our gratitude prompts or journals without a prompt.
 
-Paper about project can be found [here](https://medium.com/berea-hcc/gratitude-together-793e123c7fb).
+You can learn more about the project [here](https://medium.com/berea-hcc/gratitude-together-793e123c7fb).
 
-## Getting Started
+## Installation
+
+Install react-scripts:
+
+### `npm install react-scripts --save`
+
+Run program:
+
+### `npm start`
+
+End with an example of getting some data out of the system or using it
+for a little demo
+
+## Helpful Commands
 
 In the project directory, you can run:
 
@@ -30,19 +45,6 @@ You may also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### Installing
-
-Install react-scripts:
-
-### `npm install react-scripts --save`
-
-Run program:
-
-### `npm start`
-
-End with an example of getting some data out of the system or using it
-for a little demo
 
 ## Deployment
 
