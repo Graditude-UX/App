@@ -67,4 +67,8 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
   - **CiennaPaige Slattery**
    - **Immanuela Belaineh**
 
+## License
+
+GNU General Public License v3.0
+
 
