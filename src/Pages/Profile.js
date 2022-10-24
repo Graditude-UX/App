@@ -40,7 +40,7 @@ function Profile(){
         </div>
 
         <div className= 'profile-display' style={{paddingTop: "50px"}}>
-         Journal prompts
+          Journal prompts
          <nav style={{position: 'fixed', left: 30, paddingTop: "30px"}}>
         <Button onClick={() => {navigate("/")}} color="white" style={{}}>
         Prompt 1
