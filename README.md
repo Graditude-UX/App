@@ -29,8 +29,6 @@ Run program:
 
 ### `npm start`
 
-End with an example of getting some data out of the system or using it
-for a little demo
 
 ## Helpful Commands
 
@@ -48,8 +46,6 @@ You may also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-## Deployment
 
 ### `npm run build`
 
