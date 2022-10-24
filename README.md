@@ -16,6 +16,9 @@ This app consists of three parts:
 
 You can learn more about the project [here](https://medium.com/berea-hcc/gratitude-together-793e123c7fb).
 
+![image](https://user-images.githubusercontent.com/78549260/197444142-cc5e686b-f88c-4a14-9166-d4421f0f45a5.png) ![image](https://user-images.githubusercontent.com/78549260/197444190-330be35f-8b56-4fde-a098-82cb0ac523a5.png) ![image](https://user-images.githubusercontent.com/78549260/197444199-c37742e3-e161-4334-97ca-f97780df3d85.png)
+
+
 ## Installation
 
 Install react-scripts:
