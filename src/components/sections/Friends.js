@@ -14,7 +14,7 @@ const defaultProps = {
   ...SectionProps.defaults
 }
 
-const Hero = ({
+const Friends = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -106,7 +106,7 @@ const Hero = ({
   );
 }
 
-Hero.propTypes = propTypes;
-Hero.defaultProps = defaultProps;
+Friends.propTypes = propTypes;
+Friends.defaultProps = defaultProps;
 
-export default Hero;
+export default Friends;

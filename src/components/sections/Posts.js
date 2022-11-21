@@ -11,7 +11,7 @@ const defaultProps = {
   ...SectionTilesProps.defaults
 }
 
-const Testimonial = ({
+const Posts = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -44,8 +44,8 @@ const Testimonial = ({
   );
 
   const sectionHeader = {
-    title: 'Customer testimonials',
-    paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
+    title: 'Friends Recent Posts',
+    paragraph: 'Page Under Development.'
   };
 
   return (
@@ -116,7 +116,7 @@ const Testimonial = ({
   );
 }
 
-Testimonial.propTypes = propTypes;
-Testimonial.defaultProps = defaultProps;
+Posts.propTypes = propTypes;
+Posts.defaultProps = defaultProps;
 
-export default Testimonial;
+export default Posts;

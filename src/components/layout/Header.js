@@ -120,7 +120,7 @@ const Header = ({
                       className="list-reset header-nav-right"
                     >
                       <li>
-                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Sign up</Link>
+                        <Link to="/friends" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Friends</Link>
                       </li>
                     </ul>}
                 </div>
@@ -136,3 +136,4 @@ Header.propTypes = propTypes;
 Header.defaultProps = defaultProps;
 
 export default Header;
+ 
