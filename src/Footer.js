@@ -14,7 +14,7 @@ const useState = React.useState
 
 function Footer() {
 let navigate = useNavigate();
-
+ 
 const [buttonPopup, setButtonPopup] = useState(false);
 
   return (
@@ -22,9 +22,9 @@ const [buttonPopup, setButtonPopup] = useState(false);
       <nav style={{position: 'absolute' , left: '50%', bottom: 0, transform: 'translate(-50%, -50%)'}}>
         <Button onClick={() => {navigate("/")}} color="white" style={{}}>
         <FontAwesomeIcon icon={faGlobe} />
-        </Button>
+        </Button> 
 
-        <Button onClick={() => {navigate("/")}} color="white" style={{}}>
+        <Button onClick={() => {navigate("/messages")}} color="white" style={{}}>
         <FontAwesomeIcon icon={faMessage} />
         </Button>
 
@@ -32,11 +32,11 @@ const [buttonPopup, setButtonPopup] = useState(false);
         <FontAwesomeIcon icon={faPencil} />
         </Button>
 
-        <Button onClick={() => {navigate("/")}} color="white" style={{}}>
+        <Button onClick={() => {navigate("/friends")}} color="white" style={{}}>
         <FontAwesomeIcon icon={faUserFriends} />
         </Button>
 
-        <Button onClick={() => {navigate("/")}} color="white" style={{}}>
+        <Button onClick={() => {navigate("/settings")}} color="white" style={{}}>
         <FontAwesomeIcon icon={faGear} />
         </Button>
       </nav>
