@@ -1,43 +1,112 @@
-import React from 'react'
-import {useNavigate} from 'react-router-dom'
-import { Button, FormGroup, Input, Label } from 'reactstrap';
-import pic from './avatar.jpg';
-import Chart from '../components/Happygraph';
-import './profile.css';
+import React, { useState } from 'react';
+import classNames from 'classnames';
+import { SectionProps } from '../utils/SectionProps';
+import ButtonGroup from '../components/elements/ButtonGroup';
+import Button from '../components/elements/Button';
+import Image from '../components/elements/Image';
+import Modal from '../components/elements/Modal';
 
-// const useState = React.useState
-
-function Friends(){
-    let navigate = useNavigate();
-
-    return(
-      <div>
-        <div>
-        <Button onClick={() => {navigate("/profile")}} color="white" style={{position: 'absolute' , left: 40, top: 20}}>
-          <img src={pic} height={50} width={50} />
-        </Button>
-        <h1 style={{position: 'absolute' , left: 100, top: 0, paddingLeft: 20, paddingBottom: "30px", paddingTop: "20px"}}> My Friends </h1>
-        </div>
-
-        <div className= 'profile-display' style={{paddingTop: "70px"}}>
-         Recent posts by friends
-        <nav style={{position: 'fixed', left: 30, paddingTop: "30px"}}>
-        <Button onClick={() => {navigate("/")}} color="white" style={{}}>
-        Post 1
-        </Button>
-
-        <Button onClick={() => {navigate("/")}} color="white" style={{}}>
-        Post 2
-        </Button>
-
-        <Button onClick={() => {navigate("/")}} color="white" style={{}}>
-        Post 3
-        </Button>
-        </nav>
-        </div>
-
-        </div>
-    )
+const propTypes = {
+  ...SectionProps.types
 }
 
-export default Friends
+const defaultProps = {
+  ...SectionProps.defaults
+}
+
+const Friends = ({
+  className,
+  topOuterDivider,
+  bottomOuterDivider,
+  topDivider,
+  bottomDivider,
+  hasBgColor,
+  invertColor,
+  ...props
+}) => {
+
+  const [videoModalActive, setVideomodalactive] = useState(false);
+
+  const openModal = (e) => {
+    e.preventDefault();
+    setVideomodalactive(true);
+  }
+
+  const closeModal = (e) => {
+    e.preventDefault();
+    setVideomodalactive(false);
+  }   
+
+  const outerClasses = classNames(
+    'hero section center-content',
+    topOuterDivider && 'has-top-divider',
+    bottomOuterDivider && 'has-bottom-divider',
+    hasBgColor && 'has-bg-color',
+    invertColor && 'invert-color',
+    className
+  );
+
+  const innerClasses = classNames(
+    'hero-inner section-inner',
+    topDivider && 'has-top-divider',
+    bottomDivider && 'has-bottom-divider'
+  );
+
+  return (
+    <section
+      {...props}
+      className={outerClasses}
+    >
+      <div className="container-sm">
+        <div className={innerClasses}>
+          <div className="hero-content">
+            <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
+              Friends feed template for <span className="text-color-primary">Gratitude Together</span>
+            </h1>
+            <div className="container-xs">
+              <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
+                Currently in development
+                </p>
+              <div className="reveal-from-bottom" data-reveal-delay="600">
+                <ButtonGroup>
+                  <Button tag="a" color="primary" wideMobile href="https://cruip.com/">
+                    Get started
+                    </Button>
+                  <Button tag="a" color="dark" wideMobile href="https://github.com/cruip/open-react-template/">
+                    View on Github
+                    </Button>
+                </ButtonGroup>
+              </div>
+            </div>
+          </div>
+          <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
+            <a
+              data-video="https://player.vimeo.com/video/174002812"
+              href="#0"
+              aria-controls="video-modal"
+              onClick={openModal}
+            >
+              <Image
+                className="has-shadow"
+                src={require('../assets/images/video-placeholder.jpg')}
+                alt="Hero"
+                width={896}
+                height={504} />
+            </a>
+          </div>
+          <Modal
+            id="video-modal"
+            show={videoModalActive}
+            handleClose={closeModal}
+            video="https://player.vimeo.com/video/174002812"
+            videoTag="iframe" />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+Friends.propTypes = propTypes;
+Friends.defaultProps = defaultProps;
+
+export default Friends;
