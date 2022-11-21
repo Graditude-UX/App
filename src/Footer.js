@@ -17,6 +17,8 @@ let navigate = useNavigate();
  
 const [buttonPopup, setButtonPopup] = useState(false);
 
+
+
   return (
     <div className="footer">
       <nav style={{position: 'absolute' , left: '50%', bottom: 0, transform: 'translate(-50%, -50%)'}}>
@@ -28,7 +30,7 @@ const [buttonPopup, setButtonPopup] = useState(false);
         <FontAwesomeIcon icon={faMessage} />
         </Button>
 
-        <Button onClick={() => setButtonPopup(true)} color="white" style={{}}>
+        <Button onClick={() => setButtonPopup(v => !v)} color="white" style={{}}>
         <FontAwesomeIcon icon={faPencil} />
         </Button>
 
