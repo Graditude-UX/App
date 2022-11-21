@@ -26,7 +26,7 @@ function Profile(){
          Recent posts 
         <nav style={{position: 'fixed', left: 30, paddingTop: "30px"}}>
         <Button onClick={() => {navigate("/")}} color="white" style={{}}>
-        Post 1
+        Post1
         </Button>
 
         <Button onClick={() => {navigate("/")}} color="white" style={{}}>
@@ -43,7 +43,7 @@ function Profile(){
           Journal prompts
          <nav style={{position: 'fixed', left: 30, paddingTop: "30px"}}>
         <Button onClick={() => {navigate("/")}} color="white" style={{}}>
-        Prompt 1
+        Prompt 1 
         </Button>
 
         <Button onClick={() => {navigate("/")}} color="white" style={{}}>
