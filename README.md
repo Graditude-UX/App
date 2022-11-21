@@ -1,73 +1,144 @@
-# Gratitude Together
+# Free React landing page template
 
-This is the start of a prototype for a social media application aimed at connecting college-aged people through gratitude. 
+![Open React template preview](https://user-images.githubusercontent.com/2683512/78789364-545e7100-79ad-11ea-9e3c-9528c99cda8e.png)
 
-## Description
+**Open** is a **free React landing page template designed** for developers/makers who want to create a quick and professional landing page for their open source projects, SaaS products, online services, and more.
 
-This app consists of three parts:
+Use it for whatever you want, and be sure to reach us out on [Twitter](https://twitter.com/Cruip_com) if you build anything cool/useful with it.
 
-  ●  A visual and interactive application that allows users to interact with the globe so that they can view gratitude across the globe. Users will also be able to post short gratitude entries in their own region.
+Created and maintained with ❤️ by [Cruip.com](https://cruip.com).
 
+## Live demo
 
-  ● A social media feature where users can add friends and interact more in-depth with their friends posts by liking it or sending a message response. Users will also be able to chat with their friends and when they view their friend’s posts on the globe their friend’s image will appear.
+Check the live demo here 👉️ [https://open.cruip.com/](https://open.cruip.com/)
 
+## Open PRO
 
-  ● A self and gratitude awareness portion. This feature will include a wristband that tracks happiness trends throughout the day and creates a chart where users can view these trends. Our app will also allow the user to create private gratitude entries and they will have the option to use one of our gratitude prompts or journals without a prompt.
+[![Open Pro](https://user-images.githubusercontent.com/2683512/151177673-e56ade57-c98d-4c37-b315-d313bd14bb53.png)](https://cruip.com/)
 
-You can learn more about the project [here](https://medium.com/berea-hcc/gratitude-together-793e123c7fb).
+*The premium template is built on-the-top of [Tailwind CSS](https://tailwindcss.com/), and React components have been re-built from scratch.* 
 
-![image](https://user-images.githubusercontent.com/78549260/197444142-cc5e686b-f88c-4a14-9166-d4421f0f45a5.png) ![image](https://user-images.githubusercontent.com/78549260/197444190-330be35f-8b56-4fde-a098-82cb0ac523a5.png) ![image](https://user-images.githubusercontent.com/78549260/197444199-c37742e3-e161-4334-97ca-f97780df3d85.png)
+## Design files
 
+If you need the design files, you can download them from Figma's Community 👉 https://bit.ly/3BjiEtQ
 
-## Installation
+## Table of contents
 
-Install react-scripts:
+* [Usage](#usage)
+  * [Available Scripts](#available-scripts)
+    * [npm start](#npm-start)
+    * [npm test](#npm-test)
+    * [npm run build](#npm-run-build)
+    * [npm run eject](#npm-run-eject)
+  * [Learn More](#learn-more)
+    * [Code Splitting](#code-splitting)
+    * [Analyzing the Bundle Size](#analyzing-the-bundle-size)
+    * [Making a Progressive Web App](#making-a-progressive-web-app)
+    * [Advanced Configuration](#advanced-configuration)
+    * [Deployment](#deployment)
+    * [npm run build fails to minify](#npm-run-build-fails-to-minify)
+  * [Google Analytics Setup](#google-analytics-setup)
+* [Credits](#credits)
+* [Terms and License](#terms-and-license)
+* [About Us](#about-us)
+* [Stay in the loop](#stay-in-the-loop)
 
-### `npm install react-scripts --save`
+## Usage
 
-Run program:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### `npm start`
-
-
-## Helpful Commands
+### Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+#### `npm install`
+To install the dependencies package.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### `npm start`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `npm test`
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-Launches the test runner in the interactive watch mode.\
+#### `npm test`
+
+Launches the test runner in the interactive watch mode.<br>
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+#### `npm run build`
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
+The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Built With
+#### `npm run eject`
 
-  - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-## Authors
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-  - **CiennaPaige Slattery**
-   - **Immanuela Belaineh**
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-## License
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-GNU General Public License v3.0
+### Learn More
 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+#### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+#### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+#### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+#### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+#### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+#### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Google Analytics Setup
+
+This template uses the [React Google Analytics Module](https://github.com/react-ga/react-ga).
+
+In order to track visitors, you need to set an [environment variable](https://create-react-app.dev/docs/adding-custom-environment-variables/) called `REACT_APP_GA_CODE` storing your [GA Tracking ID](https://support.google.com/analytics/answer/7372977).
+
+## Credits
+
+- [Nucleo](https://nucleoapp.com/)
+- [Unsplash](https://unsplash.com/)
+
+## Terms and License
+
+- Released under the [GPL](https://www.gnu.org/licenses/gpl-3.0.html).
+- Copyright 2020 [Cruip](https://cruip.com/).
+- Use it for personal and commercial projects, but please don’t republish, redistribute, or resell the template.
+- Attribution is not required, although it is really appreciated.
+
+## About Us
+
+We're an Italian developer/designer duo creating high-quality design/code resources for developers, makers, and startups.
+
+## Stay in the loop
+
+If you would like to know when we release new resources, you can follow us on [Twitter](https://twitter.com/Cruip_com), or you can subscribe to our monthly [newsletter](https://cruip.com/#subscribe).
