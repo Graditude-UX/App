@@ -17,7 +17,7 @@ function Globe() {
 
     return (
         <div> 
-        <h1 style={{position: 'absolute' , left: 100, top: 0, paddingLeft: 20, paddingBottom: "30px", paddingTop: "20px"}}> Globe Page </h1>
+        <h1 style={{position: 'absolute' , left: 100, top: 0, paddingLeft: 20, paddingBottom: "30px", paddingTop: "20px"}}> Profile </h1>
         </div>
     )
 }

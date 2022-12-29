@@ -2,7 +2,8 @@ import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
-import Logo from './partials/Logo';
+import pic from '../../assets/images/avatar.jpg';
+import messageicon from '../../assets/images/messagebubble.ico';
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -79,25 +80,34 @@ const Header = ({
       {...props}
       className={classes}
     >
+      <ul className={
+                    classNames(
+                      'list-reset text-xs',
+                      navPosition && `header-nav-${navPosition}`
+                    )}>
+                    <li>
+                      <Link to="/profile" color="white" style={{position: 'absolute' , left: 40, top: 20}} onClick={closeMenu}> <img src={pic} height={50} width={50} /> </Link>
+                    </li>
+      </ul>
+                  <ul className={
+                    classNames(
+                      'list-reset text-xs',
+                      navPosition && `header-nav-${navPosition}`
+                    )}>
+                    <li>
+                      <Link to="/messages" color="white" style={{position: 'absolute' , right: 40, top: 20}} onClick={closeMenu}> <img src={messageicon} height={100} width={100} /> </Link>
+                    </li>
+                  </ul>
+
       <div className="container">
         <div className={
           classNames(
             'site-header-inner',
             bottomDivider && 'has-bottom-divider'
           )}>
-          <Logo />
+
           {!hideNav &&
             <>
-              <button
-                ref={hamburger}
-                className="header-nav-toggle"
-                onClick={isActive ? closeMenu : openMenu}
-              >
-                <span className="screen-reader">Menu</span>
-                <span className="hamburger">
-                  <span className="hamburger-inner"></span>
-                </span>
-              </button>
               <nav
                 ref={nav}
                 className={
@@ -112,7 +122,7 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Documentation</Link>
+                      <Link to="/posts" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Creat Post</Link>
                     </li>
                   </ul>
                   {!hideSignin &&

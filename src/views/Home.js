@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <Globe className="illustration-section-01" />
-      <Posts topDivider />
+      {/* <Posts topDivider /> */}
     </>
   );
 }

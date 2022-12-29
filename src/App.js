@@ -10,6 +10,9 @@ import LayoutDefault from './layouts/LayoutDefault';
 // Pages 
 import Home from './views/Home';
 import Friends from './components/sections/Friends';
+import Posts from './components/sections/Posts';
+import Messages from './components/sections/messages';
+import Profile from './components/sections/Profile';
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -35,10 +38,13 @@ const App = () => {
   return (
     <ScrollReveal
       ref={childRef}
-      children={() => (
+      children={() => ( 
         <Switch>
           <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
+          <AppRoute exact path="/profile" component={Profile} layout={LayoutDefault} />
           <AppRoute exact path="/friends" component={Friends} layout={LayoutDefault} />
+          <AppRoute exact path="/posts" component={Posts} layout={LayoutDefault} />
+          <AppRoute exact path="/messages" component={Messages} layout={LayoutDefault} />
         </Switch>
       )} />
   );

@@ -44,7 +44,7 @@ const Posts = ({
   );
 
   const sectionHeader = {
-    title: 'Friends Recent Posts',
+    title: 'My Posts',
     paragraph: 'Page Under Development.'
   };
 
